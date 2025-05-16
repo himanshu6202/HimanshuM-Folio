@@ -1,0 +1,134 @@
+<div id="skill-wrapper">
+                <div id="skills">
+                    <div class="skill">
+                        <i class="ri-layout-grid-2-fill"></i>
+                        <h3>Grid</h3>
+                    </div>   
+                    <div class="skill">
+                        <i class="ri-align-item-vertical-center-line"></i>
+                        <h3>Flex</h3>
+                    </div>
+                    <div class="skill">
+                        <h3>GSAP</h3>
+                    </div> 
+                    <div class="skill">
+                        <h3>Locomotive</h3>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-javascript-fill"></i>
+                        <h3>JavaScript</h3>
+                    </div> 
+                    <div class="skill">
+                        <i class="ri-reactjs-line"></i>
+                        <h3>ReactJs</h3>
+                    </div>    
+                    <div class="skill">
+                        <i class="ri-tailwind-css-fill"></i>
+                        <h3>Tailwind</h3>
+                    </div>
+                    <div class="skill">
+                        <h3>Redux</h3>
+                    </div>       
+                    <!-- Duplicate for seamless infinite loop -->
+                    <div class="skill">
+                        <i class="ri-layout-grid-2-fill"></i>
+                        <h3>Grid</h3>
+                    </div>   
+                    <div class="skill">
+                        <i class="ri-align-item-vertical-center-line"></i>
+                        <h3>Flex</h3>
+                    </div>
+                    <div class="skill">
+                        <h3>GSAP</h3>
+                    </div> 
+                    <div class="skill">
+                        <h3>Locomotive</h3>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-javascript-fill"></i>
+                        <h3>JavaScript</h3>
+                    </div> 
+                    <div class="skill">
+                        <i class="ri-reactjs-line"></i>
+                        <h3>ReactJs</h3>
+                    </div>    
+                    <div class="skill">
+                        <i class="ri-tailwind-css-fill"></i>
+                        <h3>Tailwind</h3>
+                    </div>
+                    <div class="skill">
+                        <h3>Redux</h3>
+                    </div>       
+                </div>
+    </div>
+
+
+
+    css desktop
+
+    #skill-wrapper {
+        /* background-color: antiquewhite; */
+        width: 90%;
+        padding: 20px 0;
+        overflow: hidden;
+      }
+    
+    #skills{
+       
+        white-space: nowrap;
+        width: max-content;
+        display: flex;
+        gap: 5.5vw;
+        align-items: center;
+        animation: skill-scroll 40s linear infinite;
+    }
+    .skill{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .skill h3{
+        font-size: 2vw;
+        color: rgba(0, 0, 0, 0.492);
+        
+    }
+    .skill i{
+        font-size: 2vw;
+        color: rgba(0, 0, 0, 0.492);    
+    }
+    
+    @keyframes skill-scroll {
+        0% {
+            transform: translateX(0);
+          }
+        100% {
+            transform: translateX(-50%);
+          }
+    }
+    
+    
+    
+
+
+
+
+
+    css mobile
+
+    #skill-wrapper {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+      }
+    .skill h3{
+        font-size: 5vw;
+        color: rgba(0, 0, 0, 0.492);
+        
+    }
+    .skill i{
+        font-size: 5vw;
+        color: rgba(0, 0, 0, 0.492);    
+    }

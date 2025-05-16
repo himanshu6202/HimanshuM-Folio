@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Creato Display';
+    src: url(./assets/CreatoDisplay-Regular.otf);
+}
+@font-face {
+    font-family: 'Creato Bold';
+    src: url(./assets/CreatoDisplay-Medium.otf);
+}
+@font-face {
+    font-family: 'relation';
+    src: url(./assets/Relationship\ of\ mélodrame.ttf);
+}
+@font-face {
+    font-family: 'Magilo';
+    src: url(./assets/Magioline.ttf);
+}
+@font-face {
+    font-family: 'lemon';
+    src: url(./assets/LEMONMILK-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Creato Display';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #EFEEEA;
+}
+
+#main{
+    width: 100vw;
+}
+
+#nav{
+    height: 10vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    position: relative;
+    
+}
+
+#nav-left{
+    height: 70px;
+    width: 70px;
+    /* background-color: blue; */
+}
+#nav-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#nav-center{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2vw;
+}
+#nav-center h2{
+    font-size: 1.2vw;
+}
+#nav-right{
+    border: 1px solid black;
+    padding: 10px 28px;
+    border-radius: 50px;
+}
+#nav-right h2{
+    font-size: 1.3vw;
+}
+#menu{
+    display: none;
+    border: 1px solid black;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+#menu h2{
+    font-size: 1.3vw;
+   
+}
+
+#hero-section{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10vh; */
+    padding: 0px 60px;
+    /* background-color: aqua; */
+    position: relative;
+}
+#designer{
+    /* background-color: red; */
+    margin-left: 10vw;
+}
+#designer h1{
+    font-size: 5.5vw;
+    line-height: 4.5vw;
+    font-weight: 400;
+    font-family: 'relation';
+}
+#designer h1:nth-child(2){
+    margin-left: 4vw;
+}
+
+#profile-photo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vh;
+    width: 18vw;
+    background-image: url(./assets/profile-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+#profile-photo img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+#profile-photo img:hover{
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+#about{
+    /* background-color: blueviolet; */
+    width: 20%;
+    margin-right: 10vw;
+}
+#about h2{
+    font-size: 1.3vw;
+}
+#about h2 span{
+    color: #10374e;
+}
+
+#hero-bottom{
+    height: 10vh;
+    width: 100%;
+    /* background-color: rgb(255, 166, 0); */
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+}
+#hero-bottom:hover .skills-track{
+    animation-play-state: paused;
+    cursor: pointer;
+   
+}
+#hero-bottom::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    content: "";
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #EFEEEA);
+    z-index: 2;
+
+}
+#hero-bottom::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    content: "";
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #EFEEEA);
+    z-index: 2;
+
+}
+.skills-track{
+    display: flex;
+    padding: 25px 0;
+    animation: 20s skillTrack linear infinite ;
+    /* background-color: red; */
+   
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+.skill h3, i{
+    font-size: 2vw;
+    color: #121212d3;
+    margin: 2px;
+}
+@keyframes skillTrack {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#service{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEEEA;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* background: radial-gradient(circle at center, #97241ec9, #EFEEEA); */
+}
+.service-left{
+    line-height: 3vw;
+}
+.service-left h1{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 400;
+    font-family: Creato Bold;
+    color: #121212d3;
+}
+.service-left p{
+    color:#121212d3;
+    font-size: 1vw;
+}
+.service-right{
+    width: 60%;
+}
+.service-right p{
+    color: #121212d3;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    text-align: center;
+}
+.service-video{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #10374e;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle at center, #97241ec9, #EFEEEA);
+}
+.service-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+    #nav{
+        height: 10vh;
+        width: 100vw;
+        /* background-color: red; */
+        padding: 5px 30px;
+    }
+    
+    #nav-left{
+        height: 60px;
+        width: 60px;
+    }
+    #nav-center{
+        display: none;
+    }
+    #nav-center h2{
+        font-size: 1.2vw;
+    }
+    #nav-right{
+        display: none;
+    }
+    #menu{
+        display: block;
+        background-color: black;
+        padding: 5px 15px;
+    }
+    #menu h2{
+        color: white;
+        font-size: 3.5vw;
+    }
+    #hero-section{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 60px;
+    }
+    #designer{
+        display: flex;
+        gap: 0.4rem;
+        margin-left: 0vw;
+    }
+    #designer h1{
+        text-align: center;
+        font-size: 10.5vw;
+        line-height: 8.5vw;
+    }
+    #designer h1:nth-child(2){
+        margin-left: 0vw;
+        text-transform: capitalize;
+    }
+
+    #profile-photo{
+        height: 40vh;
+        width: 80vw;
+        border-radius: 0;
+    }
+    #about{
+        width: 100%;
+        margin-right: 0vw;
+    }
+    #about h2{
+        text-align: center;
+        font-size: 3.3vw;
+    }
+    #hero-bottom{
+        height: 10vh;
+        width: 100%;
+        /* background-color: rgb(255, 166, 0); */
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        position: relative;
+    }
+    .skill h3, i{
+        font-size: 6vw;
+        margin: 2px;
+    }
+    .skill{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px;
+    }
+    #service{
+        height: 70vh;
+        padding-top: 40px;
+    }
+    .service-video{
+        height: 150px;
+        width: 150px;
+    }
+    .service-left{
+        line-height: 8vw;
+    }
+    .service-left h1{
+        font-size: 8vw;
+    }
+    .service-left p{
+        color:#121212d3;
+        font-size: 3vw;
+    }
+    .service-right{
+        width: 100%;
+    }
+    .service-right p{
+        font-size: 3vw;
+        line-height: 3.2vw;
+    }
+}
