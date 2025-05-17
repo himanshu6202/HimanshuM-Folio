@@ -28,11 +28,13 @@
 html, body{
     height: 100%;
     width: 100%;
-    background-color: #EFEEEA;
+    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
 }
 
 #main{
     width: 100vw;
+    position: relative;
 }
 
 #nav{
@@ -78,9 +80,7 @@ html, body{
 }
 #menu{
     display: none;
-    border: 1px solid black;
-    padding: 15px 30px;
-    border-radius: 50px;
+
 }
 #menu h2{
     font-size: 1.3vw;
@@ -211,60 +211,193 @@ html, body{
         transform: translateX(-100%);
     }
 }
-#service{
+
+#assets{
     height: 100vh;
     width: 100%;
-    background-color: #EFEEEA;
-    padding: 100px 60px;
+    padding: 30px 30px;
+    background-color: #ffffff;
+    margin-bottom: 4vw;
+}
+#assets-top{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: lightcoral; */
+}
+#assets-top h5{
+    font-size: 1vw;
+}
+#assets-center{
+    margin-top: 7vw;
+    padding: 0px 0px;
+}
+#assets-heading{ 
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#assets-heading h1{
+    font-size: 1.5vw;
+} 
+#assets-heading h1 span{
+    font-size: 1.8vw;
+    font-family: 'Relation';
+}
+#assets-heading h4{
+    font-size: 1.6vw;
+} 
+#assets-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2vw;
+    white-space: nowrap;
+    padding: 40px 0;
+    margin-top: 6vw;
+    /* background-color: bisque; */
+}
+.assets-photo{
+    height: 350px;
+    width: 250px;
+}
+.assets-photo h5{
+    font-size: 1.1vw;
+    padding-bottom: 10px;
+}
+.assets-photo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.photo-bottom-text{
+    display: flex;
+    justify-content: space-between;
+}
+.photo-bottom-text h3{
+    padding-top: 5px;
+    font-size: 0.9vw;
+}
+#banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+.div{
+    display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    /* background: radial-gradient(circle at center, #97241ec9, #EFEEEA); */
+    padding: 0px 60px;
+    /* background-color: red; */
 }
-.service-left{
-    line-height: 3vw;
+.div i{
+    font-size: 5vw;
+    font-weight: 900;
 }
-.service-left h1{
-    font-size: 4vw;
-    text-align: center;
-    font-weight: 400;
-    font-family: Creato Bold;
-    color: #121212d3;
+.div h1{
+    font-size: 5.5vw;
+    padding-right: 1vw;
 }
-.service-left p{
-    color:#121212d3;
+.div h4{
     font-size: 1vw;
-}
-.service-right{
-    width: 60%;
-}
-.service-right p{
-    color: #121212d3;
-    font-size: 1.2vw;
-    line-height: 1.2vw;
-    text-align: center;
-}
-.service-video{
-    height: 200px;
-    width: 200px;
     position: absolute;
-    border-radius: 50%;
-    background-color: #10374e;
-    overflow: hidden;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background: radial-gradient(circle at center, #97241ec9, #EFEEEA);
 }
-.service-video video{
+.slogan{
+    margin-top: 5vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: rosybrown; */
+}
+.slogan h1{
+    font-size: 2vw;
+    text-align: center;
+}
+.banner-video{
+    height: 35%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.banner-video video{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.banner-bottom{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    /* background-color: rgb(140, 65, 65); */
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+
+}
+.banner-bottom h1{
+    font-size: 40vw;
+    font-family: 'Relation';
+    letter-spacing: 0vw;
+    font-weight: 300;
+    position: relative;
+    text-transform: uppercase;
+    left: -10vw;
+    top: 10vw;
+}
+#stories{
+    color: #ffff;
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+}
+#story-description{
+    padding: 2vw 0;
+    overflow: hidden;
+}
+#story-description h1{
+    font-size: 15vw;
+    margin-left: -2.8vw;
+}
+.story-text{
+    margin-top: -3vw;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.story-text h5{
+    font-size: 1vw;
+}
+#photo-collage{
+    margin-top: 2vw;
+    /* padding: 0 10px; */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 47.8% 47.8% 47.8% ;
+    /* gap: 1vw; */
+}
+.box{
+    height: 350px;
+    width: 350px;
+    
+}
+.box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
-
 
 
 
@@ -294,12 +427,12 @@ html, body{
     }
     #menu{
         display: block;
-        background-color: black;
-        padding: 5px 15px;
+        /* background-color: black; */
+        border-radius: none;
+        /* padding: 5px 15px; */
     }
-    #menu h2{
-        color: white;
-        font-size: 3.5vw;
+    #menu i{
+        font-size: 6.5vw;
     }
     #hero-section{
         height: 80vh;
@@ -354,29 +487,129 @@ html, body{
         justify-content: center;
         margin: 0 40px;
     }
-    #service{
-        height: 70vh;
-        padding-top: 40px;
+    #assets{
+        padding: 20px 30px;
     }
-    .service-video{
-        height: 150px;
-        width: 150px;
+    #assets-top{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        /* background-color: lightcoral; */
     }
-    .service-left{
-        line-height: 8vw;
+    #assets-top h5{
+        font-size: 2.3vw;
     }
-    .service-left h1{
+    #assets-center{
+        padding: 30px 0px;
+    }
+    #assets-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 5.5vw;
+        margin-top: 10vw;
+        /* background-color: lightcyan; */
+    }
+    #assets-heading h1{
         font-size: 8vw;
+        letter-spacing: 0vw;
+    } 
+    #assets-heading h1 span{
+    font-size: 10vw;
+    font-family: 'Relation';
+    letter-spacing: 0.1vw;
     }
-    .service-left p{
-        color:#121212d3;
+    
+    #assets-heading h4{
+        font-size: 5vw;
+    } 
+    #assets-container{
+        /* background-color: red; */
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+        -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        gap: 2vw;
+        padding: 60px 0px;
+        /* margin-left: 3.2vw; */
+    }
+    .assets-photo{
+        flex-shrink: 0;
+        height: 350px;
+        width: 300px;
+    }
+    .assets-photo h5{
         font-size: 3vw;
+        /* padding-bottom: 20px; */
     }
-    .service-right{
-        width: 100%;
+     .assets-photo h3{
+        font-size: 2vw;
     }
-    .service-right p{
-        font-size: 3vw;
-        line-height: 3.2vw;
+    .div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 10px;
+    /* background-color: red; */
+    }   
+    .div i{
+    font-size: 8vw;
     }
+    .div h1{
+        font-size: 7.5vw;
+    }
+    .div h4{
+        font-size: 2vw;
+    } 
+    .slogan{
+    margin-top: 25vw;
+    }
+    .slogan h1{
+    font-size: 4vw;
+    }  
+    .banner-bottom{
+    display: flex;
+    bottom: -53%;
+    }
+    .banner-bottom h1{
+    font-size: 50vw;
+    }
+    .banner-video{
+    height: 55%;
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    background-color: blue;
+    }
+    #story-description{
+    padding: 10vw 0 0 0; 
+    overflow: hidden;
+    }
+    #photo-collage{
+    overflow: hidden;
+    margin-top: 15vw;
+    /* padding: 0 10px; */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 23% 23% 23%;
+    /* gap: 1vw; */
+    }
+    .box{
+    height: 190px;
+    width: 190px; 
+    }̀̀
+    .story-text h5{
+    font-size: 2.5vw;
+}
+    
 }
